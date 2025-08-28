@@ -1,0 +1,118 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --color-verde: #4CAF50;
+  --color-naranja: #FFA726;
+  --color-fondo: #f9f9f9;
+  --color-card: #ffffff;
+  --color-texto: #333;
+  --color-borde: #e0e0e0;
+  --sombra: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: var(--color-verde);
+  font-size: 2.2rem;
+}
+
+header p {
+  color: #777;
+  font-size: 1.1rem;
+}
+
+form {
+  background-color: var(--color-card);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form select {
+  padding: 12px;
+  border: 1px solid var(--color-borde);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: var(--color-naranja);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #fb8c00;
+}
+
+.resultados {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.historial, .ventas {
+  flex: 1 1 45%;
+  background-color: var(--color-card);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--sombra);
+}
+
+.resultados h2 {
+  margin-bottom: 15px;
+  color: var(--color-verde);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
